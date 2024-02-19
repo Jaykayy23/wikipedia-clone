@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+   h1 {
+    margin-bottom: 2rem;
+    color: #6c757d;
+}
+
+#create-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  #create-article form {
+    width: 100%;
+  }
+  
+  #create-article label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #create-article input[type="text"], 
+  #create-article textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border .3s ease;
+  }
+  
+  #create-article input[type="text"]:focus, 
+  #create-article textarea:focus {
+    border: 1px solid #5B9BD5;
+  }
+  
+  #create-article input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5B9BD5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .3s ease;
+  }
+  
+  #create-article input[type="submit"]:hover {
+    background-color: #4a89dc;
+  }
+  .navbar {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 60px;
+    background-color: #343a40;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu ul li {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-menu ul li:hover {
+    background-color: #ced4da;
+  }
+  
+  .nav-menu ul li a:hover {
+    color: #007bff;
+  }
+  .active {
+    background-color: #04AA6D;
+    color: white;
+    
+  }

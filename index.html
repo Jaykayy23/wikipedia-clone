@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encyclopedia</title>
+    <link rel="stylesheet" href="IndexStyles.css" />
+  </head>
+  <body>
+    <div class="navigation-container">
+      <nav class="navbar">
+        <div class="nav-menu">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="NewPage.html">New Page</a></li>
+            <li><a href="edit.html">Edit Page</a></li>
+            <li><a href="MarkDown.html">Markdown Editor</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Index Page -->
+    <div id="index-page">
+      <div class="header-container">
+        <span id="theme-toggler">Light</span>
+      </div>
+      <h1>WIKIPEDIA</h1>
+      <img src="Wikipedia-logo-v2@1.5x.png" alt="WIKIPEDIA logo" width="300" />
+      <h2>Welcome to the world's largest online encyclopedia!</h2>
+      <form id="search-form">
+        <input type="text" id="search-bar" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="search-results"></div>
+      <!-- Categories-->
+      <div class="catContainer">
+        Categories
+
+        <div class="categories">
+          <div class="icon">
+            <a href="https://en.wikipedia.org/wiki/Geography">
+              <img src="geo.png" alt="Globe" />
+            </a>
+            <p class="subject">Geography</p>
+            <p class="text">Explore the world and its wonders</p>
+          </div>
+
+          <div class="icon">
+            <a href="https://en.wikipedia.org/wiki/Branches_of_science">
+              <img src="science.png" alt="Globe" />
+            </a>
+            <p class="subject">Science</p>
+            <p class="text">Discover the mysteries of the universe</p>
+          </div>
+
+          <div class="icon">
+            <a href="https://en.wikipedia.org/wiki/History">
+              <img src="historry.png" alt="Globe" />
+            </a>
+            <p class="subject">History</p>
+            <p class="text">Uncover the stories of the past</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- Articles -->
+    <div id="articles">
+      <h2>Articles</h2>
+      <div class="article">
+          <h2>Introduction to Machine Learning</h2>
+          <p>Machine learning is a subset of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. It focuses on the development of computer programs that can access data and use it to learn for themselves. The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide. The primary aim is to allow the computers to learn automatically without human intervention or assistance and adjust actions accordingly.</p>
+          <a href="edit.html" class="edit-button">Edit</a>
+      </div>
+      <div class="article">
+        <h2>Understanding Cybersecurity</h2>
+        <p>Cybersecurity refers to the practice of protecting computers, servers, mobile devices, electronic systems, networks, and data from digital attacks. These attacks are usually aimed at accessing, changing, or destroying sensitive information, extorting money from users, or interrupting normal business processes. Implementing effective cybersecurity measures is particularly challenging today because there are more devices than people, and attackers are becoming more innovative. A strong cybersecurity strategy can provide a good security posture against malicious attacks, protecting an organization from a security breach and the aftermath of financial loss, reputation damage, and legal implications.</p>
+        <a href="edit.html" class="edit-button">Edit</a>
+    </div>
+      <div class="article">
+        <h2>The Basics of Web Development</h2>
+        <p>Web development is the process of creating websites or web applications. It involves tasks such as web design, web content creation, client-side/server-side scripting, and network security configuration. Web development can be divided into two types: front-end development (also known as client-side development) and back-end development (also known as server-side development). Front-end development involves using languages like HTML, CSS, and JavaScript to create the visual part of the website that users see and interact with. Back-end development involves using languages like PHP, Python, or Java to handle data storage and retrieval, and ensure that the website works as expected.</p>
+        <a href="edit.html" class="edit-button">Edit</a>
+    </div>
+      
+  </div>
+    
+    <script src="app.js"></script>
+  </body>
+  <footer>
+    <p>&copy; 2024 Group 1Y1 Wikipedia Project </p>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
+  </footer>
+</html>
