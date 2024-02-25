@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    </head>
+    <body>
+        <div style="text-align: center; margin: 20px;">
+            <h2>Markdown to HTML Converter</h2>
+            <textarea id="markdownInput" rows="10" cols="50" placeholder="Enter your markdown here..."></textarea>
+            <br>
+            <button onclick="convertMarkdown()">Convert</button>
+            <br>
+            <textarea id="htmlOutput" rows="10" cols="50" placeholder="Converted Markdown will appear here..." readonly></textarea>
+        </div>
+      
+    </body>
+    <script>
+        function convertMarkdown() {
+            var markdown = document.getElementById('markdownInput').value;
+            var converter = new showdown.Converter();
+            var html = converter.makeHtml(markdown);
+            document.getElementById('htmlOutput').value = html;
+        }
+    </script>
+</html>
